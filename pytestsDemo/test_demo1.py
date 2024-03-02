@@ -14,8 +14,9 @@ import pytest
 # you can skip tests with @pytest.mark.skip
 #@pytest.mark.xfail
 # fixtures are used for setup and tear down methods for test cases --conftest file to generalize
-#fixture will be available test file
-
+#fixture will be available to all test cases (fixture name into parameters of method)
+#datadriven and parameterization can be done with return statements in tuple format
+#when you define fixture scope to class only , it will run once before class is initiated and at the end
 # xfail is for running but not reporting
 
 #  @pytest.fixture()    related to Hooks
@@ -42,3 +43,7 @@ def test_firstprogram1():
     print("Hello")
     msg = "Hello"
     assert msg == "test"
+
+
+def test_crossbrowser(crossbrowser):
+    print(crossbrowser)
