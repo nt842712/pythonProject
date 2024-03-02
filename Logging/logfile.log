@@ -1,0 +1,5 @@
+2024-03-02 14:46:48,085 : DEBUG : Logging.test_logging : A debug statement is executed
+2024-03-02 14:46:48,085 : INFO : Logging.test_logging : Information statement
+2024-03-02 14:46:48,085 : WARNING : Logging.test_logging : Something is warning
+2024-03-02 14:46:48,085 : ERROR : Logging.test_logging : A major error has happened
+2024-03-02 14:46:48,085 : CRITICAL : Logging.test_logging : Critical error
